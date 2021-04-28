@@ -19,8 +19,8 @@ TEST(newfuncTest, num1) {
 
 TEST(newfuncTest, num2) {
     ASSERT_EQ(newfunc(1, 0, -4).flag, 2);
-    ASSERT_NEAR(newfunc(0, 2, 2).x1, 2.00, 0.001);
-    ASSERT_NEAR(newfunc(0, 2, 2).x2, -2.00, 0.001);
+    ASSERT_NEAR(newfunc(1, 0, -4).x1, 2.00, 0.001);
+    ASSERT_NEAR(newfunc(1, 0, -4).x2, -2.00, 0.001);
 }
 
 TEST(newfuncTest, num3) {
@@ -33,11 +33,8 @@ TEST(newfuncTest, num4) {
 }
 
 TEST(newfuncTest, num5) {
-    ASSERT_EQ(newfunc(0, 1, 0).flag, 0);
-}
-
-TEST(newfuncTest, num6) {
-    ASSERT_EQ(newfunc(1, 0, 0).flag, 0);
+    ASSERT_EQ(newfunc(0, 1, 0).flag, 1);
+    ASSERT_NEAR(newfunc(0, 1, 0).x1, 0.00, 0.001);
 }
 
 
